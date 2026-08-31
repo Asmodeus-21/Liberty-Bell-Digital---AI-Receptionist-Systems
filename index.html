@@ -9,16 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
-    <!-- TRACKING PLACEHOLDERS: Drop in your Meta Pixel, GA4, GTM, and GoHighLevel scripts here -->
-    <script>
-      // Placeholder mock tracking setup for development
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
-      window.fbq = window.fbq || function() { console.log('[Meta Pixel Event]:', arguments); };
-      
-      // Initial PageView
-      console.log('[Tracking Initialized]: PageView recorded for Liberty Bell Digital Universal Landing Page');
-    </script>
+    <!-- Meta Pixel Code -->
+        <script>
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                   n.queue=[];t=b.createElement(e);t.async=!0;
+                   t.src=v;s=b.getElementsByTagName(e)[0];
+                   s.parentNode.insertBefore(t,s)}(window, document,'script',
+                                                       'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1095956689542561');
+              fbq('track', 'PageView');
+        </script>
   </head>
   <body class="bg-[#FAFAFB] text-[#1E293B] antialiased selection:bg-[#D4A017]/20 selection:text-[#16213E]">
     <div id="root"></div>
